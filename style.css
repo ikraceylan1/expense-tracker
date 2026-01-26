@@ -15,12 +15,12 @@ body {
 
 /* Header (Üst Bar) - EKLE */
 header {
-    background-color: rgba(214, 235, 205, 0.8);  /* Yarı saydam mavi */
+    background-color: rgba(214, 235, 205, 0.8);  
     color: rgb(41, 50, 78);
     padding: 30px 20px;
     text-align:center;
     position: relative;  /* Hamburger için önemli */
-    border-radius: 10px;  /* Yumuşak köşeler */
+    border-radius: 10px;  
 }
 
 header h1 {
@@ -173,9 +173,8 @@ ul li:hover {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 999;  /* Menüden bir alt katman */
+    z-index: 999; 
 }
-
 #overlay.active {
     opacity: 1;
     visibility: visible;
@@ -188,6 +187,6 @@ body.menu-open {
 
 body.menu-open header,
 body.menu-open main {
-    transform: translateX(250px);  /* 250px sağa kayar */
+    transform: translateX(250px);  
     transition: transform 0.3s ease;
 }
