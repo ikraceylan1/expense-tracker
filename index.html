@@ -13,9 +13,10 @@
         <h2><b>Hoş Geldiniz</b></h2>
     </header>
 
-    <main>
+    <main id="main-content">
+    <section id="ana-sayfa" class="page active">
         <h3>Sitemizin Amacı:</h3>
-        <p>Sitemize yeniden hoş geldiniz.Kullanıcı dostu bir arayüz ile harcamalarınızı kolayca takip etmenizi amaçlamaktayız.</p>
+        <p>Sitemize yeniden hoş geldiniz. Kullanıcı dostu bir arayüz ile harcamalarınızı kolayca takip etmenizi amaçlamaktayız.</p>
         
         <h3>Neler Yapabilirsiniz?</h3>
         <ul>
@@ -24,18 +25,83 @@
             <li>📈 Harcama geçmişinizi görebilirsiniz</li>
             <li>💳 Güncel bakiyenizi takip edebilirsiniz</li>
         </ul>
-    </main>
- <div id="sidebar-menu">
+    </section>
+
+    <section id="ekle" class="page">
+        <h2>💰 Gelir / Gider Ekle</h2>
+        
+        <!-- BAKİYE ÖNCE -->
+        <div class="balance-summary">
+            <div class="balance-card">
+                <h3>Toplam Bakiye</h3>
+                <p id="toplam-bakiye" class="balance-amount">0.00 ₺</p>
+            </div>
+            <div class="balance-details">
+                <div class="balance-item gelir">
+                    <span>Gelir</span>
+                    <span id="toplam-gelir">0.00 ₺</span>
+                </div>
+                <div class="balance-item gider">
+                    <span>Gider</span>
+                    <span id="toplam-gider">0.00 ₺</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORM SONRA -->
+        <div class="form-container">
+            <div class="transaction-type">
+                <button id="gelir-btn" class="type-btn active">💰 Gelir</button>
+                <button id="gider-btn" class="type-btn">💸 Gider</button>
+            </div>
+
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label for="aciklama">Açıklama:</label>
+                    <input type="text" id="aciklama" placeholder="Örn: Maaş, Market, Kahve..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="miktar">Miktar (₺):</label>
+                    <input type="number" id="miktar" placeholder="0.00" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" required>
+                        <option value="">Seçiniz...</option>
+                        <option value="maaş">💼 Maaş</option>
+                        <option value="yemek">🍔 Yemek</option>
+                        <option value="ulaşım">🚗 Ulaşım</option>
+                        <option value="alışveriş">🛒 Alışveriş</option>
+                        <option value="eğlence">🎮 Eğlence</option>
+                        <option value="fatura">📄 Fatura</option>
+                        <option value="diğer">📦 Diğer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tarih">Tarih:</label>
+                    <input type="date" id="tarih" required>
+                </div>
+
+                <button type="submit" class="submit-btn">➕ Ekle</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<div id="sidebar-menu">
     <button id="close-btn">✖</button>
     <h2>Menü</h2>
     <ul>
-            <li><a href="#ana-sayfa">🏠 Ana Sayfa</a></li>
-            <li><a href="#ekle">➕ Gelir/Gider Ekle</a></li>
-            <li><a href="#gecmis">📋 İşlem Geçmişi</a></li>
-            <li><a href="#bakiye">💰 Bakiye</a></li>
+        <li><a href="#ana-sayfa">🏠 Ana Sayfa</a></li>
+        <li><a href="#ekle">➕ Gelir/Gider Ekle</a></li>
+        <li><a href="#gecmis">📋 İşlem Geçmişi</a></li>
+        <li><a href="#bakiye">💰 Bakiye</a></li>
     </ul>
- </div>
- <div id="overlay"></div>
+</div>
+<div id="overlay"></div>
     <script src="script.js"></script>
 </body>
 </html>
