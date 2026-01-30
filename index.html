@@ -89,6 +89,86 @@
             </form>
         </div>
     </section>
+    <!-- İŞLEM GEÇMİŞİ SAYFASI -->
+    <section id="gecmis" class="page">
+        <h2>📋 İşlem Geçmişi</h2>
+
+        <!-- Filtreler -->
+        <div class="filters">
+            <div class="filter-group">
+                <label>Kategori:</label>
+                <select id="filter-kategori">
+                    <option value="tumu">Tümü</option>
+                    <option value="maaş">💼 Maaş</option>
+                    <option value="yemek">🍔 Yemek</option>
+                    <option value="ulaşım">🚗 Ulaşım</option>
+                    <option value="alışveriş">🛒 Alışveriş</option>
+                    <option value="eğlence">🎮 Eğlence</option>
+                    <option value="fatura">📄 Fatura</option>
+                    <option value="diğer">📦 Diğer</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Tür:</label>
+                <select id="filter-tip">
+                    <option value="tumu">Tümü</option>
+                    <option value="gelir">💰 Gelir</option>
+                    <option value="gider">💸 Gider</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- İşlem Listesi -->
+        <div id="transaction-list" class="transaction-list">
+            <p class="empty-message">Henüz işlem yok. Gelir veya gider ekleyin!</p>
+        </div>
+    </section>
+    <!-- BAKİYE/ÖZET SAYFASI -->
+    <section id="bakiye" class="page">
+        <h2>💰 Bakiye & Özet</h2>
+
+        <!-- Genel Bakiye -->
+        <div class="overview-cards">
+            <div class="overview-card total">
+                <div class="card-icon">💳</div>
+                <div class="card-info">
+                    <h3>Toplam Bakiye</h3>
+                    <p id="overview-bakiye" class="card-amount">0.00 ₺</p>
+                </div>
+            </div>
+
+            <div class="overview-card gelir">
+                <div class="card-icon">💰</div>
+                <div class="card-info">
+                    <h3>Toplam Gelir</h3>
+                    <p id="overview-gelir" class="card-amount">0.00 ₺</p>
+                </div>
+            </div>
+
+            <div class="overview-card gider">
+                <div class="card-icon">💸</div>
+                <div class="card-info">
+                    <h3>Toplam Gider</h3>
+                    <p id="overview-gider" class="card-amount">0.00 ₺</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori Bazlı Özet -->
+        <div class="category-summary">
+            <h3>📊 Kategori Bazlı Harcamalar</h3>
+            <div id="category-list" class="category-list">
+                <p class="empty-message">Henüz harcama yok.</p>
+            </div>
+        </div>
+
+        <!-- Grafik -->
+        <div class="chart-container">
+            <h3>📈 Harcama Dağılımı</h3>
+            <canvas id="expense-chart"></canvas>
+        </div>
+    </section>
 </main>
 
 <div id="sidebar-menu">
@@ -102,6 +182,7 @@
     </ul>
 </div>
 <div id="overlay"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
