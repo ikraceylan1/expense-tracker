@@ -22,7 +22,6 @@ Bu projeyi bilgisayarınıza klonlayın:
 
 ```bash
 git clone [https://github.com/ikraceylan1/expense-tracker](https://github.com/ikraceylan1/expense-tracker)
-```
 
 ## 🌐 Canlı Demo
 Uygulamayı tarayıcı üzerinden hemen denemek için: 
