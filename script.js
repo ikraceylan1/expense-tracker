@@ -236,8 +236,7 @@ function deleteTransaction(id) {
 filterKategori.addEventListener('change', displayTransactions);
 filterTip.addEventListener('change', displayTransactions);
 
-// ========== BAKİYE/ÖZET SAYFASI ==========
-
+// BAKİYE/ÖZET SAYFASI 
 // Özet sayfasını güncelle
 function updateOverview() {
     // Genel bakiyeleri hesapla
@@ -286,7 +285,7 @@ function updateCategorySummary() {
         return;
     }
     
-    // Kategorilere göre topla
+
     const categoryTotals = {};
     
     expenses.forEach(expense => {
@@ -307,10 +306,10 @@ function updateCategorySummary() {
         'diğer': '📦'
     };
     
-    // HTML oluştur
+    
     categoryList.innerHTML = '';
     
-    // Büyükten küçüğe sırala
+   
     const sortedCategories = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]);
     
     sortedCategories.forEach(([kategori, total]) => {
@@ -330,7 +329,7 @@ function updateCategorySummary() {
         categoryList.appendChild(item);
     });
 }
-// ========== GRAFİK ==========
+// GRAFİK
 
 let expenseChart = null;
 
@@ -406,7 +405,7 @@ function updateChart() {
         }
     });
 }
-// ========== LOCALSTORAGE - VERİ KAYDETME ==========
+// VERİ KAYDETME
 
 // Sayfa yüklenince verileri yükle
 window.addEventListener('DOMContentLoaded', () => {

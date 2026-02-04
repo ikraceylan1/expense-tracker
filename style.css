@@ -104,18 +104,19 @@ ul li:hover {
 #sidebar-menu {
     position: fixed;
     top: 0;
-    left: -300px;  /* Başlangıçta gizli (solda) */
+    left: 0;  /* Başlangıçta gizli (solda) */
     width: 250px;
     height: 100%;
     background: rgba(41, 50, 78, 0.95);
     padding: 30px 20px;
+    transform: translateX(-100%);
     transition: left 0.8s ease;  /* Kayma animasyonu */
     z-index: 1000;
     box-shadow: 2px 0 10px rgba(146, 255, 153, 0.671);
 }
 
 #sidebar-menu.active {
-    left: 0;  /* Açıldığında görünür */
+   transform: translateX(0);
 }
 
 #sidebar-menu h2 {
@@ -148,18 +149,22 @@ ul li:hover {
 }
 
 #close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
+   position: absolute;
+    top: 15px; 
+    right: 35px;  
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 5px 10px; 
     border: none;
+    border-radius: 5px;  
     color: rgb(184, 242, 189);
     font-size: 24px;
     cursor: pointer;
+    z-index: 1001;  
 }
 
 #close-btn:hover {
     color: white;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* Overlay (Karartma) */
@@ -583,4 +588,132 @@ body.menu-open main {
 
 #expense-chart {
     max-height: 300px;
+}
+/* RESPONSIVE TASARIMI */
+
+/* Tablet ve Küçük Ekranlar için */
+@media (max-width: 768px) {
+    
+    body {
+        margin: 10px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    header h2 {
+        font-size: 16px;
+    }
+   
+    #hamburger-btn {
+        top: 15px;
+        left: 10px;
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+    
+    main {
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    #sidebar-menu {
+        width: 80%;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+    
+    .transaction-type {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .balance-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .overview-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .transaction-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .transaction-amount {
+        margin-right: 0;
+        font-size: 18px;
+    }
+    
+    .delete-btn {
+        align-self: flex-end;
+    }
+    
+
+    .category-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .chart-container {
+        padding: 15px;
+    }
+    
+    #expense-chart {
+        max-height: 250px;
+    }
+}
+
+/* Çok Küçük Ekranlar için */
+@media (max-width: 480px) {
+    
+    header h1 {
+        font-size: 20px;
+    }
+    
+    header h2 {
+        font-size: 14px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .submit-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .balance-amount {
+        font-size: 28px;
+    }
+    
+    .card-amount {
+        font-size: 20px;
+    }
+    
+    /* Sidebar tam ekrann */
+    #sidebar-menu {
+        width: 100%;
+    }
 }
