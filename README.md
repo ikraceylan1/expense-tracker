@@ -21,9 +21,10 @@ Harcama Takip Uygulaması, kullanıcıların günlük gelir ve giderlerini kolay
 Bu projeyi bilgisayarınıza klonlayın:
 
 ```bash
-git clone [https://github.com/ikraceylan1/expense-tracker](https://github.com/ikraceylan1/expense-tracker)
+git clone [https://github.com/ikraceylan1/expense-tracker.git](https://github.com/ikraceylan1/expense-tracker.git)
 
 ## 🌐 Canlı Demo
 Uygulamayı tarayıcı üzerinden hemen denemek için: 
 
 [**Harcama Takip Uygulaması Canlı İzle**](https://ikraceylan1.github.io/expense-tracker/)
+
