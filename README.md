@@ -1,6 +1,9 @@
 # 💰 Harcama Takip Uygulaması (Expense Tracker)
-
 Harcama Takip Uygulaması, kullanıcıların günlük gelir ve giderlerini kolayca yönetebilmeleri için tasarlanmış, modern ve kullanıcı dostu bir web uygulamasıdır.
+
+## 🌐 Canlı Demo
+Uygulamayı tarayıcı üzerinden hemen denemek için: 
+[**Harcama Takip Uygulaması Canlı İzle**](https://ikraceylan1.github.io/expense-tracker/)
 
 ## ✨ Özellikler
 * **Anlık Bakiye Takibi:** Toplam bakiye, gelir ve giderlerinizi anlık olarak görüntüleyin.
@@ -22,9 +25,4 @@ Bu projeyi bilgisayarınıza klonlayın:
 
 ```bash
 git clone [https://github.com/ikraceylan1/expense-tracker.git](https://github.com/ikraceylan1/expense-tracker.git)
-
-## 🌐 Canlı Demo
-Uygulamayı tarayıcı üzerinden hemen denemek için: 
-
-[**Harcama Takip Uygulaması Canlı İzle**](https://ikraceylan1.github.io/expense-tracker/)
 
