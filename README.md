@@ -25,4 +25,4 @@ Bu projeyi bilgisayarınıza klonlayın:
 
 ```bash
 git clone [https://github.com/ikraceylan1/expense-tracker.git](https://github.com/ikraceylan1/expense-tracker.git)
-
+```
