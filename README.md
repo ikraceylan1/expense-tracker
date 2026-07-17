@@ -20,7 +20,7 @@ Uygulamayı tarayıcı üzerinden hemen denemek için:
 * **Chart.js v4:** Harcama dağılımını gösteren interaktif grafikler için.
 * **Local Storage:** Verilerin tarayıcıda saklanması için.
 
-## 🛠️ Kurulum
+## Kurulum
 Bu projeyi bilgisayarınıza klonlayın:
 
 ```bash
