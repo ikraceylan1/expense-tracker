@@ -1,11 +1,11 @@
-# 💰 Harcama Takip Uygulaması (Expense Tracker)
+# Harcama Takip Uygulaması (Expense Tracker)
 Harcama Takip Uygulaması, kullanıcıların günlük gelir ve giderlerini kolayca yönetebilmeleri için tasarlanmış, modern ve kullanıcı dostu bir web uygulamasıdır.
 
-## 🌐 Canlı Demo
+##  Canlı Demo
 Uygulamayı tarayıcı üzerinden hemen denemek için: 
 [**Harcama Takip Uygulaması Canlı İzle**](https://ikraceylan1.github.io/expense-tracker/)
 
-## ✨ Özellikler
+##  Özellikler
 * **Anlık Bakiye Takibi:** Toplam bakiye, gelir ve giderlerinizi anlık olarak görüntüleyin.
 * **İşlem Geçmişi:** Yapılan tüm işlemleri listeleyin ve istediğinizde silin.
 * **Kategori Bazlı Analiz:** Harcamalarınızı kategorilere ayırarak nerede ne kadar harcadığınızı görün.
@@ -13,7 +13,7 @@ Uygulamayı tarayıcı üzerinden hemen denemek için:
 * **Veri Kalıcılığı:** Sayfa yenilense bile verileriniz kaybolmaz.
 * **Tam Mobil Uyumluluk:** Telefon, tablet ve masaüstü cihazlarda kusursuz görünüm.
 
-## 🚀 Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 * **HTML5:** Sayfa yapısı ve içerik.
 * **CSS3:** Modern arayüz tasarımı, cam efekti (Glassmorphism) ve mobil uyumlu düzen.
 * **JavaScript:** Dinamik işlem yönetimi ve hesaplama mantığı.
